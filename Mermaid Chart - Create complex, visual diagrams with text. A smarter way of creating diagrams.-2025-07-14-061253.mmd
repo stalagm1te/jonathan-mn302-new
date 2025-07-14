@@ -1,0 +1,10 @@
+flowchart TD
+        A[Start Game] -->B[Display question]
+        B --> C{Get User Answer}
+        C --> D[Is answer correct?]
+        D --> Yes --> E[ Update Score]
+        D --> No --> F[Show correct Answer]
+        F--> G
+        E--> G{More Questions?}
+        G--Yes--> B
+        G--no--> H[End Game]
